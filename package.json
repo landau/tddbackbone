@@ -1,0 +1,26 @@
+{
+  "name": "bbconf",
+  "version": "0.0.0",
+  "description": "> Backbone.js gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-mocha": "~0.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "derp"
+  },
+  "keywords": [
+    "grunt",
+    "backbone",
+    "testing"
+  ],
+  "author": "landautrevor@gmail.com",
+  "license": "MIT"
+}
