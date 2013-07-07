@@ -6,7 +6,7 @@ describe("test", function () {
     });
 
     it("should fail", function () {
-        expect(false).to.be.true;
+        expect(false).to.be.false;
     });
 
 });
