@@ -3,7 +3,7 @@
 
     describe('TodoList', function () {
         beforeEach(function () {
-            this.collection = new app.TodoList
+            this.collection = new app.TodoList();
         });
 
         describe('.completed', function () {
@@ -37,10 +37,10 @@
                 expect(this.collection.nextOrder()).to.equal(1);
             });
 
-            // This test will fail because the order
-            // property could be unset on the item
+            // This test will fail if the order
+            //  is not set 
             it("should return the next ordered item number", function () {
-                this.collection.add(new app.Todo);
+                this.collection.add(new app.Todo({ order: 1 }));
                 expect(this.collection.nextOrder()).to.equal(2);
             });
         });
@@ -50,7 +50,7 @@
                 var todo = new app.Todo();
                 var spy = sinon.spy(todo, "get");
                 this.collection.comparator(todo);
-                expect(spy).to.have.been.calledOnce;    
+                expect(spy).to.have.been.calledOnce;
                 expect(spy).to.have.been.calledWithExactly("order");
             });
         });

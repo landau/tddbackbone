@@ -3,15 +3,15 @@
 
     describe("Todo View", function () {
         beforeEach(function () {
-            this.model = new app.Todo;
+            this.model = new app.Todo();
             this.view = new app.TodoView({ model: this.model });
         });
 
         it("should be a list tag", function () {
-            expect(app.TodoView.prototype.tagName).to.equal("li")
+            expect(app.TodoView.prototype.tagName).to.equal("li");
         });
 
-        describe("initialize", function () {
+        describe(".initialize", function () {
             it("should call listenTo with change", function () {
                 var spy = sinon.spy(this.view, "listenTo");
                 this.view.initialize();
@@ -66,12 +66,12 @@
             it("should call `.$` with the `.edit` selector", function () {
                 var spy = sinon.spy(this.view, "$");
                 this.view.render();
-                expect(spy).to.be.calledWithExactly(".edit")
+                expect(spy).to.be.calledWithExactly(".edit");
             });
 
             it("should set the `$input` instance property", function () {
                 this.view.render();
-                var $edit = this.view.$(".edit")
+                var $edit = this.view.$(".edit");
                 expect(this.view.$input[0]).to.equal($edit[0]);
             });
 
@@ -87,7 +87,7 @@
                 var spy = sinon.spy(this.view.$el, "toggleClass");
 
                 // Don't test functionality of other user defined methods
-                var stub = sinon.spy(this.view, "isHidden", function () {
+                var stub = sinon.stub(this.view, "isHidden", function () {
                     return true;
                 });
 

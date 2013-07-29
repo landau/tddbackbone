@@ -1,8 +1,8 @@
-"use strict"
-
 module.exports = function (grunt) {
+    "use strict";
+
     // https://github.com/kmiyashiro/grunt-mocha
-    grunt.loadNpmTasks("grunt-mocha")
+    grunt.loadNpmTasks("grunt-mocha");
 
     //https://github.com/gruntjs/grunt-contrib-watch
     grunt.loadNpmTasks('grunt-contrib-watch');

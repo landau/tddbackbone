@@ -1,9 +1,9 @@
 (function (app) {
     'use strict';
 
-    describe('Todo', function () {
+    describe('Todo Model', function () {
         beforeEach(function () {
-            this.model = new app.Todo
+            this.model = new app.Todo();
         });
 
         it('should set completed to false by default', function () {
@@ -15,7 +15,7 @@
                 // Prevent sync from doing it's normal thing
                 // when `save` is called
                 this.syncStub = sinon.stub(app.Todo.prototype, "sync");
-                this.model = new app.Todo()
+                this.model = new app.Todo();
             });
 
             afterEach(function () {

@@ -1,8 +1,8 @@
 (function (window) {
 
     // Set globals for assertion chai assertion tools
-    window.assert = chai.assert
-    window.expect = chai.expect
+    window.assert = chai.assert;
+    window.expect = chai.expect;
 
     mocha.setup({
         ui: 'bdd',
