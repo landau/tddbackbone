@@ -1,0 +1,8 @@
+{
+  "name": "chai-jquery",
+  "version": "1.1.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chaijs/chai-jquery.git"
+  }
+}
