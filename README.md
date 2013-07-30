@@ -1,6 +1,6 @@
 TodoMVC now with tests!
 
-> To run tests be sure to install `node` and `grunt >= 0.4`. In the project dir type `grunt` to run tests.
+> To run tests be sure to install `node` and `grunt >= 0.4`. When you first clone the app, type `npm install` in the root dir. Once depencencies are install type `grunt` to run tests.
 
 
 [
